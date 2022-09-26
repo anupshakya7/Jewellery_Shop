@@ -2,7 +2,7 @@
 @section('main-content')
 <div class="container mt-3">
 
-    <form action="login" method="POST" class="card p-4 mt-4 w-50 mx-auto">
+    <form action="login" method="POST" class="card p-4 mt-4 w-50 mx-auto shadow">
         @csrf 
         @if(isset(Auth::user()->email))
             <script>window.location= "dashboard"</script>

@@ -1,7 +1,7 @@
 @extends('AuthLayout.main')
 @section('main-content')
 <div class="container">
-    <form action="register" method="POST" class="card p-4 mt-4 w-50 mx-auto">
+    <form action="register" method="POST" class="card p-4 mt-4 w-50 mx-auto shadow">
         <h2 class="text-center">Register Page</h2>
         @csrf
         <div class="mb-3">
