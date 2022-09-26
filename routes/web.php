@@ -35,6 +35,7 @@ Route::get('logout',function(){
 Route::get('dashboard',[UserController::class,"dashboard"]);
 
 Route::get('gold',[GoldController::class,"index"]);
+Route::post('add-gold-item',[GoldController::class,"addGoldItem"]);
 
 Route::get('silver',[SilverController::class,"index"]);
 

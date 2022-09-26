@@ -3,12 +3,12 @@
 
 @if(Session::get('loginUser'))
 <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <a class="navbar-brand" href="dashboard">Home Page</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           
           <li class="nav-item dropdown">
@@ -25,8 +25,7 @@
     </div>
   </nav>
 @endif
-    <div class="container">
-
+    <div class="containers">
         <div class="cont">
             <img src="{{url('frontend/img/gold.jpeg')}}">
             <h5>Gold</h5>
