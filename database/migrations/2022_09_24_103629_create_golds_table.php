@@ -17,7 +17,11 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('item_code');
             $table->string('item_name');
-            $table->string('item_tola');
+            $table->string('item_gram');
+            $table->string('item_making_charge');
+            $table->string('item_wastages');
+            $table->string('item_stone');
+            $table->mediumText('item_images')->nullable();
             $table->timestamps();
         });
     }

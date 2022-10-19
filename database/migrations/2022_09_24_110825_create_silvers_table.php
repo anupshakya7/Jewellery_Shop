@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger('item_code');
             $table->string('item_name');
             $table->string('item_tola');
+            $table->mediumText('item_images')->nullable();
             $table->timestamps();
         });
     }

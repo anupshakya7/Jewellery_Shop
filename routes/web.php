@@ -36,12 +36,13 @@ Route::get('dashboard',[UserController::class,"dashboard"]);
 
 //Gold Routes//
 Route::get('gold',[GoldController::class,"index"]);
+Route::get('fetch-gold',[GoldController::class,"fetchGold"]);
 Route::get('gold-calculate',[GoldController::class,"gold"]);
-Route::post('add-gold-item',[GoldController::class,"addGoldItem"]);
+Route::post('add-gold',[GoldController::class,"store"]);
 Route::get('edit-gold/{id}',[GoldController::class,"edit"]);
-Route::put('update-gold-item',[GoldController::class,"update"]);
-Route::get('delete-gold-item/{id}',[GoldController::class,"delete"])->name('delete');
-Route::get('search',[GoldController::class,"search"]);
+Route::post('update-gold/{id}',[GoldController::class,"update"]);
+Route::delete('delete-gold/{id}',[GoldController::class,"destroy"]);
+Route::get('search-gold',[GoldController::class,"search"]);
 Route::get('search-calculate/{text}',[GoldController::class,"searchGold"]);
 //End Gold Routes//
 
